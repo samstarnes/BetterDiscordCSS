@@ -1,3 +1,15 @@
+/**
+ * @name :root CSS modifications
+ * @author Anomaly#0001
+ * @version 0.0.1
+ * @description Basic changes to the :root selector (test)
+ * @invite https://0x0.la/discord
+ * @source https://github.com/samstarnes/BetterDiscordCSS
+ */
+
+/* Old Windows titlebar - remove this @import if you wish to use default titlebar */
+@import url("https://gibbu.github.io/BetterDiscord-Themes/addons/windows-titlebar.css");
+
 :root {
     --background-image: url(https://i.imgur.com/kYW2H5C.jpg)!important;
     --background-image-blur: 5px!important;
