@@ -3,7 +3,6 @@
     --background-image-blur: 5px!important;
     --background-image-size: cover!important;
     --background-image-position: center!important;
-    --popout-modal-image: var(--background-image)!important;
     --window-padding: 20px!important;
     --window-roundness: 10px!important;
 }
