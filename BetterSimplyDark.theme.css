@@ -2,7 +2,7 @@
  * @name Better SimplyDark
  * @author Anomaly#0001
  * @authorID 226930844827254784
- * @version 0.0.5
+ * @version 0.0.6
  * @description Slight app embed and old titlebar, requires SimplyDark v2.0.0 by Gibbu#1211 - https://github.com/Gibbu/BetterDiscord-Themes/tree/master/SimplyDark
  * @invite ZmdQSY7
  * @website https://0x0.la
@@ -19,16 +19,18 @@
   --background-image-size: cover!important; /* Size of the background image | DEFAUT: cover | OPTIONS: cover, contain */
   --background-image-position: center!important; /* Position of background image | DEAFULT: center | OPTIONS: top, right, bottom, left, center */
   --background-tertiary: transparent!important;   /* outer border */
+  --bg1: rgb(0,0,0,0.9)!important;                  /* emote selection */
   --bg2: rgb(0,0,0,0.0)!important;                /* chat window & everything to the right */
   --bg3: rgb(0,0,0,0.0)!important;                /*  */
-  --bg4: rgb(0,0,0,0.7)!important;                /* channel list */
+  --bg4: rgb(0,0,0,0.8)!important;                /* channel list */
   --bg5: rgb(0,0,0,0.0)!important;                /* AV-screen controls */
-  --bg6: rgb(0,0,0,0.7)!important;                /* server list */
+  --bg6: rgb(0,0,0,0.8)!important;                /* server list */
   --bg7: rgb(0,0,0,0.0)!important;                /* top bar */
   --bg8: rgb(0,0,0,0.3)!important;                /* server icons & user popout */
-  --bgPopout: rgb(0,0,0,0.7)!important;           /* modify user popout individually */
+  --bg9: rgb(0,0,0,0.0)!important;                /* user list */
   --bg10: transparent!important;                  /* outer border */
   --bg15: rgb(0,0,0,0.7)!important;               /* unread banner */
+  --bgPopout: rgb(0,0,0,0.7)!important;           /* modify user popout individually */
   --bgUnread: rgb(255,0,0,1.0)!important;         /* unread symbol */
   --background-primary: rgb(0,0,0,0.8)!important; /* chat window & everything to the right */
   --light-txt-color: rgb(200,200,200,1.0)!important;
@@ -79,6 +81,14 @@
     Now just follow this tutorial: https://imgur.com/a/CNbw7xC
   */
   --font: 'Whitney';
+}
+
+.da-autocomplete {
+  background: var(--bg1)!important;
+}
+
+#app-mount .membersWrap-2h-GB4 {
+  background: var(--bg9)!important;
 }
 
 #app-mount .sidebar-2K8pFh .container-PNkimc .wrapper-1ucjTd.modeUnread-1zpFdA .unread-3zKkbm {
