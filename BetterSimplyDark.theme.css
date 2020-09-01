@@ -2,7 +2,7 @@
  * @name Better SimplyDark
  * @author Anomaly#0001
  * @authorID 226930844827254784
- * @version 0.0.6
+ * @version 0.0.7
  * @description Slight app embed and old titlebar, requires SimplyDark v2.0.0 by Gibbu#1211 - https://github.com/Gibbu/BetterDiscord-Themes/tree/master/SimplyDark
  * @invite ZmdQSY7
  * @website https://0x0.la
@@ -33,6 +33,7 @@
   --bgPopout: rgb(0,0,0,0.7)!important;           /* modify user popout individually */
   --bgUnread: rgb(255,0,0,1.0)!important;         /* unread symbol */
   --background-primary: rgb(0,0,0,0.8)!important; /* chat window & everything to the right */
+  --transparent: rgb(0,0,0,0.0)!important;
   --light-txt-color: rgb(200,200,200,1.0)!important;
   --dark-txt-color: rgb(14,14,14,1.0)!important;
   --header-primary: var(--light-txt-color);
@@ -81,6 +82,10 @@
     Now just follow this tutorial: https://imgur.com/a/CNbw7xC
   */
   --font: 'Whitney';
+}
+
+#app-mount .wrapper-3t9DeA[aria-label*=mobile]:not([style*="width:80px;"]):before {
+  background: var(--transparent)!important;
 }
 
 .da-autocomplete {
