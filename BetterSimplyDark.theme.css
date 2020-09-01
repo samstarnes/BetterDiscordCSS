@@ -2,7 +2,7 @@
  * @name Better SimplyDark
  * @author Anomaly#0001
  * @authorID 226930844827254784
- * @version 0.0.3
+ * @version 0.0.4
  * @description Slight app embed and old titlebar, requires SimplyDark v2.0.0 by Gibbu#1211 - https://github.com/Gibbu/BetterDiscord-Themes/tree/master/SimplyDark
  * @invite ZmdQSY7
  * @website https://0x0.la
@@ -19,8 +19,8 @@
   --background-image-size: cover!important; /* Size of the background image | DEFAUT: cover | OPTIONS: cover, contain */
   --background-image-position: center!important; /* Position of background image | DEAFULT: center | OPTIONS: top, right, bottom, left, center */
   --background-tertiary: transparent!important;   /* outer border */
-  --bg2: transparent!important;                   /* channel list */
-  --bg3: transparent!important;                   /* channel list */
+  --bg2: rgb(0,0,0,0.0)!important;                /* chat window & everything to the right */
+  --bg3: rgb(0,0,0,0.0)!important;                /*  */
   --bg4: rgb(0,0,0,0.3)!important;                /* channel list */
   --bg5: rgb(0,0,0,0.0)!important;                /* AV-screen controls */
   --bg6: rgb(0,0,0,0.3)!important;                /* server list */
@@ -28,7 +28,7 @@
   --bg8: rgb(0,0,0,0.3)!important;                /* server icons */
   --bg10: transparent!important;                  /* outer border */
   --bg15: rgb(0,0,0,0.7)!important;               /* unread banner */
-  --background-primary: rgb(0,0,0,0.8)!important; /* text box & everything to the right */
+  --background-primary: rgb(0,0,0,0.8)!important; /* chat window & everything to the right */
 
   /* Popout & Modal variables */
   --popout-modal-image: var(--background-image); /* Background image for popouts and modals | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */
@@ -75,8 +75,12 @@
   background:rgb(0,0,0,0.0)!important;
 }
 
-.da-members{
+.da-members {
   background:rgb(0,0,0,0.0)!important;
+}
+
+.da-video {
+  background-color:rgb(0,0,0,0.0)!important;
 }
 
 #app-mount:before {
