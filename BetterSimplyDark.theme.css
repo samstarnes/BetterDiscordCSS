@@ -2,7 +2,7 @@
  * @name Better SimplyDark
  * @author Anomaly#0001
  * @authorID 226930844827254784
- * @version 0.0.4
+ * @version 0.0.5
  * @description Slight app embed and old titlebar, requires SimplyDark v2.0.0 by Gibbu#1211 - https://github.com/Gibbu/BetterDiscord-Themes/tree/master/SimplyDark
  * @invite ZmdQSY7
  * @website https://0x0.la
@@ -21,14 +21,24 @@
   --background-tertiary: transparent!important;   /* outer border */
   --bg2: rgb(0,0,0,0.0)!important;                /* chat window & everything to the right */
   --bg3: rgb(0,0,0,0.0)!important;                /*  */
-  --bg4: rgb(0,0,0,0.3)!important;                /* channel list */
+  --bg4: rgb(0,0,0,0.7)!important;                /* channel list */
   --bg5: rgb(0,0,0,0.0)!important;                /* AV-screen controls */
-  --bg6: rgb(0,0,0,0.3)!important;                /* server list */
+  --bg6: rgb(0,0,0,0.7)!important;                /* server list */
   --bg7: rgb(0,0,0,0.0)!important;                /* top bar */
-  --bg8: rgb(0,0,0,0.3)!important;                /* server icons */
+  --bg8: rgb(0,0,0,0.3)!important;                /* server icons & user popout */
+  --bgPopout: rgb(0,0,0,0.7)!important;           /* modify user popout individually */
   --bg10: transparent!important;                  /* outer border */
   --bg15: rgb(0,0,0,0.7)!important;               /* unread banner */
+  --bgUnread: rgb(255,0,0,1.0)!important;         /* unread symbol */
   --background-primary: rgb(0,0,0,0.8)!important; /* chat window & everything to the right */
+  --light-txt-color: rgb(200,200,200,1.0)!important;
+  --dark-txt-color: rgb(14,14,14,1.0)!important;
+  --header-primary: var(--light-txt-color);
+  --header-secondary: var(--light-txt-color);
+  --channels-default: var(--light-txt-color);
+  --text-normal: var(--light-txt-color);
+  --text-muted: var(--light-txt-color);
+
 
   /* Popout & Modal variables */
   --popout-modal-image: var(--background-image); /* Background image for popouts and modals | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */
@@ -69,6 +79,18 @@
     Now just follow this tutorial: https://imgur.com/a/CNbw7xC
   */
   --font: 'Whitney';
+}
+
+#app-mount .sidebar-2K8pFh .container-PNkimc .wrapper-1ucjTd.modeUnread-1zpFdA .unread-3zKkbm {
+  background-color: var(--bgUnread)!important;
+}
+
+.da-userPopout {
+  background: var(--bgPopout)!important;
+}
+
+.da-name {
+  color: var(--light-txt-color)!important;
 }
 
 .theme-dark #MemberCount {
