@@ -2,7 +2,7 @@
  * @name Better SimplyDark
  * @author Anomaly#0001
  * @authorID 226930844827254784
- * @version 0.0.7
+ * @version 0.0.8
  * @description Slight app embed and old titlebar, requires SimplyDark v2.0.0 by Gibbu#1211 - https://github.com/Gibbu/BetterDiscord-Themes/tree/master/SimplyDark
  * @invite ZmdQSY7
  * @website https://0x0.la
@@ -82,6 +82,10 @@
     Now just follow this tutorial: https://imgur.com/a/CNbw7xC
   */
   --font: 'Whitney';
+}
+
+.da-container {
+  background-color: transparent;
 }
 
 #app-mount .wrapper-3t9DeA[aria-label*=mobile]:not([style*="width:80px;"]):before {
